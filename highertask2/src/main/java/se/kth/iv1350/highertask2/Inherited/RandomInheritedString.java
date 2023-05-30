@@ -25,7 +25,7 @@ public class RandomInheritedString extends RandomInheritedChar{
         return nextString(super.nextInt(2048),origin,bound);
     }
     public String nextString(int stringLength) {
-        return nextString(stringLength,32,255);
+        return nextString(stringLength,32,256);
     }
     
 

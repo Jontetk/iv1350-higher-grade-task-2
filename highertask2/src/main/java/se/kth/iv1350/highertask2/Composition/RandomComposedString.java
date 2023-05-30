@@ -31,7 +31,7 @@ public class RandomComposedString {
         return nextString(rand.nextInt(2048),origin,bound);
     }
     public String nextString(int stringLength) {
-        return nextString(stringLength,32,255);
+        return nextString(stringLength,32,256);
     }
     public void setSeed(long seed) {
         this.rand.setSeed(seed);
