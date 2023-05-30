@@ -14,7 +14,7 @@ public class RandomChar extends Random {
     }
 
 
-    protected char NextChar(char origin, char bound){
+    protected char nextChar(char origin, char bound){
         int originInt = (int) origin; 
         int boundInt = (int) bound; 
         int zero = 0;
@@ -27,5 +27,11 @@ public class RandomChar extends Random {
                 }
             return (char) zero;
 
+    }
+
+    protected char NextBasicLatinChar(){
+        int origin = 0;
+        int bound = 127;
+        
     }
 }
