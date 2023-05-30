@@ -4,18 +4,12 @@ import se.kth.iv1350.highertask2.Composition.RandomComposedChar;
 import se.kth.iv1350.highertask2.Composition.RandomComposedString;
 import se.kth.iv1350.highertask2.Inherited.*;
 
-
-/**
- * Hello world!
- */
 public final class Main {
 
     public static void main(String[] args) {
 
         RandomInheritedString rInString = new RandomInheritedString();
         RandomComposedString rCompString = new RandomComposedString();
-        RandomComposedChar rComposedChar = new RandomComposedChar();
-        RandomInheritedChar rInChar = new RandomInheritedChar();
        
         System.out.println("We have adapted java.util.random class.");
         System.out.println("One class for random chars and one for random strings.");
