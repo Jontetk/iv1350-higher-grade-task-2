@@ -1,7 +1,6 @@
 package se.kth.iv1350.highertask2;
 
-import se.kth.iv1350.highertask2.Composition.RandomComposedChar;
-import se.kth.iv1350.highertask2.Composition.RandomComposedString;
+import se.kth.iv1350.highertask2.Composition.*;
 import se.kth.iv1350.highertask2.Inherited.*;
 
 public final class Main {
