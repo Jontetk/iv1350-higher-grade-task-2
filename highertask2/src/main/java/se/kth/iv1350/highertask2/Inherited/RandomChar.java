@@ -14,13 +14,12 @@ public class RandomChar extends Random {
     }
 
 
-    protected char nextChar(char origin, char bound){
-        int originInt = (int) origin; 
-        int boundInt = (int) bound; 
+    protected char nextChar(int origin, int bound){
+     
         int zero = 0;
 
-        if(originInt < bound){
-            int n =  boundInt-origin;
+        if(origin < bound){
+            int n =  bound-origin;
             if (n>0){
                 return (char) (nextInt(n)+origin);
             }
@@ -29,9 +28,10 @@ public class RandomChar extends Random {
 
     }
 
-    protected char NextBasicLatinChar(){
+    protected char nextBasicLatinChar(){
         int origin = 0;
         int bound = 127;
         
+        return nextChar(origin, bound);
     }
 }
