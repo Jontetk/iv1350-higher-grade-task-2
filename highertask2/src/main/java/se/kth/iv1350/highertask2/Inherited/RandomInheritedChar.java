@@ -2,14 +2,14 @@ package se.kth.iv1350.highertask2.Inherited;
 
 import java.util.Random;
 
-public class RandomChar extends Random {
+public class RandomInheritedChar extends Random {
     
 
-    public  RandomChar() {
+    public  RandomInheritedChar() {
         super();
     }
 
-    public RandomChar(long seed) {
+    public RandomInheritedChar(long seed) {
         super(seed); 
     }
     

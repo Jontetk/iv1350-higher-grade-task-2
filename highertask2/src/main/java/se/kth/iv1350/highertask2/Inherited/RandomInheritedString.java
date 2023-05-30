@@ -1,12 +1,12 @@
 package se.kth.iv1350.highertask2.Inherited;
 
-public class RandomString extends RandomChar{
+public class RandomInheritedString extends RandomInheritedChar{
     
-    public RandomString() {
+    public RandomInheritedString() {
         super();
     }
 
-    public RandomString(long seed) {
+    public RandomInheritedString(long seed) {
         super(seed);
     }
 
