@@ -27,10 +27,13 @@ public class RandomComposedChar {
             if (n>0){
                 return (char) (rng.nextInt(n)+origin);
             }
-                }
+        }
         
         return (char) zero;
     }
 
+    public char nextBasicLatinChar(){
+        return nextChar(' ', '~'+1);
+    }
     
 }
