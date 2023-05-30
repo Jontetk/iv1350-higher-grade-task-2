@@ -25,10 +25,12 @@ public class RandomComposedString {
         return stringBuild.toString();
     }
     public String nextString() {
-        return nextString(rand.nextInt(2048));
+        int random_num = this.rand.nextInt(100);
+        return nextString(random_num);
     }
     public String nextString(int origin,int bound) {
-        return nextString(rand.nextInt(2048),origin,bound);
+        int random_num = this.rand.nextInt(100);
+        return nextString(random_num,origin,bound);
     }
     public String nextString(int stringLength) {
         return nextString(stringLength,32,256);
