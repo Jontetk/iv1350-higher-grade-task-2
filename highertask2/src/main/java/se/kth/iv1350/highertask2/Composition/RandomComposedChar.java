@@ -15,8 +15,21 @@ public class RandomComposedChar {
         this.rng = new Random(seed);
     }
 
+    public void setSeed(long seed) {
+        this.rng.setSeed(seed);
+    }
+
     char nextChar(int origin, int bound){
+
+        int zero = 0;
+        if(origin < bound){
+            int n =  bound-origin;
+            if (n>0){
+                return (char) (rng.nextInt(n)+origin);
+            }
+                }
         
+        return (char) zero;
     }
 
     
