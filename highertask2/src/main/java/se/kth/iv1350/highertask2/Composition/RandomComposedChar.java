@@ -33,6 +33,7 @@ public class RandomComposedChar {
     }
 
     public char nextBasicLatinChar(){
+        // Basic Latin in unicode begins with Space and ends with Tilde
         return nextChar(' ', '~'+1);
     }
     
