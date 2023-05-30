@@ -28,10 +28,12 @@ public class RandomChar extends Random {
 
     }
 
-    protected char nextBasicLatinChar(){
-        int origin = 0;
+    public char nextBasicLatinChar(){
+        int origin = 32;
         int bound = 127;
         
         return nextChar(origin, bound);
     }
+
+    
 }
