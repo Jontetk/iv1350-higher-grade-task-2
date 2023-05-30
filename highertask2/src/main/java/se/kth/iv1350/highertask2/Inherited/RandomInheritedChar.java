@@ -28,10 +28,9 @@ public class RandomInheritedChar extends Random {
     }
 
     public char nextBasicLatinChar(){
-        int origin = 32;
-        int bound = 127;
         
-        return nextChar(origin, bound);
+        
+        return nextChar(' ', '~'+1);
     }
 
     
