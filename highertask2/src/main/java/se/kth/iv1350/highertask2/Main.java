@@ -30,7 +30,7 @@ public final class Main {
         rInString.setSeed(5);
         rCompString.setSeed(5);
 
-        System.out.println("Random String class outputs with specific seed: ");
+        System.out.println("Random String class outputs with same seed: ");
         System.out.println(rInString.nextString(5));
         System.out.println(rCompString.nextString(5));
         System.out.println(rInString.nextString(10));
