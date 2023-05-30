@@ -23,40 +23,39 @@ public final class Main {
         System.out.println("");
 
         System.out.println("Random String class outputs with random seed: ");
-        System.out.println("Adapted using inheritance: "+rInString.nextString(5));
-        System.out.println("Adapted using compsiton:   "+rCompString.nextString(5));
-        System.out.println("Adapted using compsiton:   "+rInString.nextString(5));
-        System.out.println("Adapted using inheritance: "+rCompString.nextString(5));
-        rInString.setSeed(5);
-        rCompString.setSeed(5);
-
+        System.out.println("Adapted using inheritance:  "+rInString.nextString(5));
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString(5));
+        System.out.println("Adapted using inheritance:  "+rInString.nextString(5));
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString(5));
+        rInString.setSeed(10);
+        rCompString.setSeed(10);
+        System.out.println("");
         System.out.println("Random String class outputs with specific seed: ");
-        System.out.println(rInString.nextString(5));
-        System.out.println(rCompString.nextString(5));
-        System.out.println(rInString.nextString(10));
-        System.out.println(rCompString.nextString(10));
+        System.out.println("Adapted using inheritance:  "+rInString.nextString(5));
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString(5));
+        System.out.println("Adapted using inheritance:  "+rInString.nextString(10));
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString(10));
 
         System.out.println("");
+        System.out.println("Random String class outputs with specific seed and random length: ");
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString());
+        System.out.println("Adapted using inheritance:  "+rInString.nextString());
 
-        System.out.println(rCompString.nextString());
-        System.out.println("");
-        System.out.println(rInString.nextString());
-        System.out.println("");
-        rInString.setSeed(5);
-        rCompString.setSeed(5);
-        System.out.println(rInString.nextString(32,100));
-        System.out.println("");
-        System.out.println(rCompString.nextString(32,100));
-        System.out.println("");
+        rInString.setSeed(10);
+        rCompString.setSeed(10);
 
         System.out.println("");
-
-
+        System.out.println("Random String class outputs with specific seed and random length with selected characters: ");
+        System.out.println("Adapted using inheritance:  "+rInString.nextString(32,100));
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString(32,100));
         
         rInString.setSeed(5);
         rCompString.setSeed(5);
-        System.out.println(rCompString.nextString(10,50,60));
-        System.out.println(rInString.nextString(10,50,60));
+        
+        System.out.println("");
+        System.out.println("Random String class outputs with specific seed and selected length with selected characters: ");
+        System.out.println("Adapted using compsiton:  "+rCompString.nextString(10,50,60));
+        System.out.println("Adapted using inheritance:  "+rInString.nextString(10,50,60));
 
 
     }
