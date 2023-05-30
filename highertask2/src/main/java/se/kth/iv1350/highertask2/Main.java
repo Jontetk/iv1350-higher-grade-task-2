@@ -49,6 +49,7 @@ public final class Main {
         System.out.println("Adapted using inheritance:  "+rInString.nextString(32,100));
         System.out.println("Adapted using compsiton:  "+rCompString.nextString(32,100));
         
+        
         rInString.setSeed(5);
         rCompString.setSeed(5);
         
