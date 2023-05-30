@@ -12,8 +12,7 @@ public class RandomChar extends Random {
     public RandomChar(long seed) {
         super(seed); 
     }
-
-
+    
     protected char nextChar(int origin, int bound){
      
         int zero = 0;
