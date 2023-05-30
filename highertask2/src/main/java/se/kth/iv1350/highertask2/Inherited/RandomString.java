@@ -27,6 +27,7 @@ public class RandomString extends RandomChar{
     public String nextString(int stringLength) {
         return nextString(stringLength,32,255);
     }
+    
 
 
 
