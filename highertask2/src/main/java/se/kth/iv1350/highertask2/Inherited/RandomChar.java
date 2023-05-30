@@ -34,4 +34,6 @@ public class RandomChar extends Random {
         
         return nextChar(origin, bound);
     }
+
+    
 }
